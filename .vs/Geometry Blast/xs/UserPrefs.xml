@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{C442A453-F6CD-5E00-9747-A8F6E1966970}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DifficultyManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DifficultyManager.cs" Line="26" Column="54" IsPinned="True" />
+      <File FileName="Assets/Menu/DisplayHighScore.cs" IsPinned="True" />
+      <File FileName="Assets/Scripts/Weapon.cs" IsPinned="True" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/EnemyHealth.cs" />
+      <File FileName="Assets/Scripts/FollowBackground.cs" />
+      <File FileName="Assets/Scripts/SlidingText.cs" />
+      <File FileName="Assets/Menu/SwipeMenu.cs" />
+      <File FileName="Assets/Scripts/PlayerProgress.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="92412e1c-ab82-4eec-9a45-8f96b69b4273" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
