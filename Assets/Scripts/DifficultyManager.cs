@@ -15,7 +15,7 @@ public class DifficultyManager : MonoBehaviour
 
     public void PlayMedium()
     {
-        if (PlayerPrefs.GetInt("EasyHighScore") > 120) { 
+        if (PlayerPrefs.GetInt("EasyHighScore") > 0) { 
             difficulty = "Medium";
             Loader.instance.LoadGameOverScreen(3);
         }
@@ -23,7 +23,7 @@ public class DifficultyManager : MonoBehaviour
 
     public void PlayHard()
     {
-        if (PlayerPrefs.GetInt("EasyHighScore") > 120)
+        if (PlayerPrefs.GetInt("EasyHighScore") > 0)
         {
             difficulty = "Hard";
             Loader.instance.LoadGameOverScreen(4);

@@ -84,6 +84,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,6 +96,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -107,15 +109,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 98ddd85a1e0c848e3a0043089a8365e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.19, y: 1.8}
+  m_Size: {x: 2.02, y: 1.81}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &4879901279825292521
@@ -215,7 +217,11 @@ MonoBehaviour:
   healthText: {fileID: 0}
   healthBar: {fileID: 7545836702854112149, guid: 5b4bf3e24c0c14ed6a68988bc40d4ac5,
     type: 3}
+  joystick1: {fileID: 0}
+  joystick2: {fileID: 0}
   ship: {fileID: 114998920460922418}
+  render: {fileID: 0}
+  enemyExplode: {fileID: 0}
 --- !u!60 &4879901279825292523
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -234,7 +240,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.02, y: 1.81}
-    newSize: {x: 2.19, y: 1.8}
+    newSize: {x: 2.02, y: 1.81}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

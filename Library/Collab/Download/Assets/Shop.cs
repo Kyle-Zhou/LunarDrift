@@ -12,6 +12,19 @@ public class Shop : MonoBehaviour
     private static bool shipOneBought = false;
     private static bool shipTwoBought = false;
 
+    public void Start()
+    {
+        if (PlayerPrefs.GetInt("Ship2") == 1)
+        {
+            shipOneButton.gameObject.SetActive(true);
+            fiveButton.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("Ship3") == 1)
+        {
+            shipTwoButton.gameObject.SetActive(true);
+            tenButton.gameObject.SetActive(false);
+        }
+    }
 
     public void BuyShipOne()
     {
@@ -20,10 +33,10 @@ public class Shop : MonoBehaviour
 
             shipOneButton.gameObject.SetActive(false);
 
-            if (currencyManager.getMoneyAmount() >= 0)
+            if (currencyManager.getMoneyAmount() >= 200)
             {
                 shipOneBought = true;
-                currencyManager.TakeMoney(5);
+                currencyManager.TakeMoney(200);
                 Debug.Log(currencyManager.getMoneyAmount());
                 fiveButton.gameObject.SetActive(false);
             }
@@ -31,6 +44,7 @@ public class Shop : MonoBehaviour
 
         if (shipOneBought == true){
             shipOneButton.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("Ship2", 1);
 
         }
     }
@@ -43,10 +57,10 @@ public class Shop : MonoBehaviour
 
             shipTwoButton.gameObject.SetActive(false);
 
-            if (currencyManager.getMoneyAmount() >= 0)
+            if (currencyManager.getMoneyAmount() >= 400)
             {
                 shipTwoBought = true;
-                currencyManager.TakeMoney(0);
+                currencyManager.TakeMoney(400);
                 Debug.Log(currencyManager.getMoneyAmount());
                 tenButton.gameObject.SetActive(false);
             }
@@ -55,8 +69,9 @@ public class Shop : MonoBehaviour
         if (shipTwoBought == true)
         {
             shipTwoButton.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("Ship3", 1);
 
-            }
         }
+    }
 
 }

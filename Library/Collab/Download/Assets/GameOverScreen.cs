@@ -35,7 +35,7 @@ public class GameOverScreen : MonoBehaviour
 
     public void AddNewCurrency()
     {
-        int addedAmount = int.Parse(timer.getSeconds()) + (int.Parse(timer.getMinutes()) * 60);
+        int addedAmount = (int.Parse(timer.getSeconds()) + (int.Parse(timer.getMinutes()) * 60)) / 2;
         //int addedAmount = 10;
         currencyManager.AddMoney(addedAmount);
 
