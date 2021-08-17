@@ -3,8 +3,8 @@
 ## I. Overview
 
 Top down shooter where you: defeat different enemies, earn coins to upgrade your ship, unlock new difficulties and set high scores.   
-![alt text](https://github.com/Kyle-Zhou/LunarDrift/gif/LunarDriftBlue.gif)
-![alt text](https://github.com/Kyle-Zhou/LunarDrift/gif/LunarDriftPurple2.gif)
+![alt text](https://github.com/Kyle-Zhou/LunarDrift/blob/master/gif/LunarDriftBlue.gif)
+![alt text](https://github.com/Kyle-Zhou/LunarDrift/blob/master/gif/LunarDriftPurple2.gif)
 
 ## II. Details
 
